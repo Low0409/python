@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>testdbに登録されている名前とメアド</h3>
+<ul>
+{% for member in members %}
+    <li>{{member.id}}:{{ member.name}} : {{ member.email }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
